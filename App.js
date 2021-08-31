@@ -6,6 +6,7 @@ import { createStackNavigator } from '@react-navigation/stack';
 import { StyleSheet, Text, SafeAreaView } from 'react-native';
 import HomeScreen from './screens/HomeScreen.js';
 import SearchScreen from './screens/SearchScreen.js';
+import ParkingDetails from './screens/ParkingDetails.js'
 
 
 export default function App() {
@@ -23,6 +24,13 @@ export default function App() {
           <Stack.Screen
             name='SearchScreen'
             component={SearchScreen}
+            options={{
+              headerShown: false
+            }}
+          />
+          <Stack.Screen
+            name='ParkingDetails'
+            component={ParkingDetails}
             options={{
               headerShown: false
             }}
